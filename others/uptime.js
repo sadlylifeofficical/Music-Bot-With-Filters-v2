@@ -8,7 +8,7 @@ const {
 module.exports = {
   name: `uptime`,
   description: `Gives you the uptime of the Bot`,
-  aliases: ["cpu","botp"],
+  aliases: ["ut"],
   cooldown: 5,
   edesc: "With that you can see how long the Bot has been running nonstop",
   execute(message, args, client) {
