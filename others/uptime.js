@@ -8,7 +8,7 @@ const {
 module.exports = {
   name: `uptime`,
   description: `Gives you the uptime of the Bot`,
-  aliases: [],
+  aliases: ["cpu","botp"],
   cooldown: 5,
   edesc: "With that you can see how long the Bot has been running nonstop",
   execute(message, args, client) {
@@ -18,7 +18,7 @@ module.exports = {
     let seconds = Math.floor(client.uptime / 1000) % 60;
     //react with approve emoji
     message.react("✅");
-    return message.channel.send(new MessageEmbed().setColor("#F0EAD6").setTitle(`***Harmony's Uptime:***\n\n\`${days}d\` \`${hours}h\` \`${minutes}m\` \`${seconds}s\n\``));
+    return message.channel.send(new MessageEmbed().setColor("#F0EAD6").setTitle(`***${client.user.tag}'s Uptime:***\n\n\`${days}d\` \`${hours}h\` \`${minutes}m\` \`${seconds}s\n\``));
 
 
   }
