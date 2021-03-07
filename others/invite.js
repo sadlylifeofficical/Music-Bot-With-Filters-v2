@@ -8,11 +8,11 @@ module.exports = {
 
     let inviteEmbed = new MessageEmbed()
       .setTitle("Add us to your server!")
-      .setDescription("Love using ${client.user.tag}? Great, Thank you! Consider adding it to your server")
+      .setDescription("Love using ${client.user.uesrname}? Great, Thank you! Consider adding it to your server")
       .setColor("#F0EAD6")
-      .setAuthor('${client.user.tag}','https://cdn.discordapp.com/attachments/778600026280558617/781024479623118878/ezgif.com-gif-maker_1.gif')
+      .setAuthor('${client.user.username}','https://cdn.discordapp.com/attachments/778600026280558617/781024479623118878/ezgif.com-gif-maker_1.gif')
       .setThumbnail(message.guild.iconURL())
-      .addField(`Use the following link to add Harmony to your discord server`, 'https://discord.com/api/oauth2/authorize?client_id=767885987740254291&permissions=49572160&scope=bot', true)
+      .addField(`Use the following link to add Harmony to your discord server`, 'https://discord.com/api/oauth2/authorize?client_id=${client.user.id}&permissions=49572160&scope=bot', true)
 
     inviteEmbed.setTimestamp();
 
