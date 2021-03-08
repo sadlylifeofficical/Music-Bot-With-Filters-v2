@@ -11,7 +11,7 @@ const db = require('quick.db');
 module.exports = {
   name: `prefix`,
   description: `Sets a server specific Prefix`,
-  aliases: ["setprefix","stp,"setp"],
+  aliases: ["setprefix","stp","setp"],
   cooldown: 5,
   edesc: `Type this Command, to set a server specific Prefix! Usage: ${PREFIX}prefix <NEW PREFIX>`,
  async execute(message, args, client) {
